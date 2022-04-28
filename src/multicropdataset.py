@@ -7,11 +7,12 @@
 import random
 from logging import getLogger
 
-from PIL import ImageFilter
+from PIL import ImageFilter, Image, ImageFile
 import numpy as np
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 logger = getLogger()
 
 
